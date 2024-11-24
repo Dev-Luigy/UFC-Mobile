@@ -5,10 +5,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,11 +24,12 @@ class MainActivity : AppCompatActivity() {
     currentJobText.text = "Emprego Atual: Engenheira de Software na TechX"
 
     // Lista de experiências
-    val experiencias = listOf(
-      "Analista de Sistemas - Empresa A",
-      "Desenvolvedora Júnior - Empresa B",
-      "Estagiária - Empresa C"
-    )
+    val experiencias =
+            listOf(
+                    "Analista de Sistemas - Empresa A",
+                    "Desenvolvedora Júnior - Empresa B",
+                    "Estagiária - Empresa C"
+            )
 
     // Adicionando experiências dinamicamente
     for (experiencia in experiencias) {
